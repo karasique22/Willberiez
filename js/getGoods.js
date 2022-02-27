@@ -1,3 +1,6 @@
+//import { get } from "http";
+//import { getgid } from "process";
+
 const getGoods = () => {
     const links = document.querySelectorAll('.navigation-link')
     const viewAllButton = document.querySelector('.more')
@@ -66,6 +69,5 @@ const getGoods = () => {
         renderGoods(JSON.parse(localStorage.getItem('goods')));
     }
 
-}
-
+};
 getGoods();
